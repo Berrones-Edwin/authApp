@@ -1,0 +1,8 @@
+<div class="card" *ngIf="profile" style="width: 18rem;">
+  <img [src]="profile.picture" class="card-img-top" [alt]="profile.given_name">
+  <div class="card-body">
+    <h5 class="card-title">{{ profile.family_name + ' ' + profile.given_name }}</h5>
+    <p class="card-text"> Nickname: <b>{{ profile.nickname }}</b>   </p>
+    <a href="#" class="text-primary">Genero {{profile.gender}}</a>
+  </div>
+</div>
